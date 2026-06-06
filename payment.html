@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preços e Desenvolvimento Personalizado</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#6b7280;
+    max-width:850px;
+    margin:auto;
+}
+
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-bottom:60px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.featured{
+    border:3px solid #2563eb;
+    position:relative;
+}
+
+.badge{
+    position:absolute;
+    top:-15px;
+    right:20px;
+    background:#2563eb;
+    color:white;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:0.85rem;
+    font-weight:700;
+}
+
+.plan-name{
+    font-size:1.7rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.description{
+    color:#6b7280;
+    margin-bottom:25px;
+}
+
+.features{
+    list-style:none;
+    margin-bottom:30px;
+}
+
+.features li{
+    margin-bottom:12px;
+    padding-left:22px;
+    position:relative;
+}
+
+.features li::before{
+    content:"✓";
+    color:#16a34a;
+    font-weight:bold;
+    position:absolute;
+    left:0;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    text-decoration:none;
+    padding:14px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+.btn-primary{
+    background:#2563eb;
+    color:white;
+}
+
+.btn-secondary{
+    background:#111827;
+    color:white;
+}
+
+.btn-free{
+    background:#16a34a;
+    color:white;
+}
+
+.footer-actions{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin:50px 0;
+    flex-wrap:wrap;
+}
+
+.back-btn{
+    background:#374151;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+.paypal-btn{
+    background:#0070ba;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+.section{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    margin-bottom:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+.faq-item{
+    margin-bottom:20px;
+}
+
+.faq-item h3{
+    margin-bottom:8px;
+}
+
+.notice{
+    text-align:center;
+    color:#6b7280;
+    margin-bottom:40px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+   <div class="hero">
+    <h1>Preços Simples</h1>
+
+    <p>
+        Software completo disponível gratuitamente.
+        Contrate desenvolvimento personalizado apenas se precisar
+        de funcionalidades específicas adaptadas ao seu fluxo de trabalho.
+    </p>
+</div>
+
+    <div class="pricing">
+
+        <!-- Community -->
+
+        <div class="card">
+
+    <div class="plan-name">
+        Edição Comunitária
+    </div>
+
+    <div class="price">
+        Gratuito
+    </div>
+
+    <p class="description">
+        Perfeito para estudantes, investidores,
+        empreendedores e pequenas empresas.
+    </p>
+
+    <ul class="features">
+        <li>Todas as funcionalidades do software</li>
+        <li>Aplicação para desktop</li>
+        <li>Aplicação móvel</li>
+        <li>API de sincronização</li>
+        <li>Atualizações gratuitas</li>
+        <li>Correções de erros incluídas</li>
+        <li>Curso gratuito na Udemy</li>
+        <li>Sugestões de funcionalidades são bem-vindas</li>
+        <li>Participe da evolução do produto</li>
+    </ul>
+
+    <a href="index.html" class="btn btn-free">
+        Baixar Gratuitamente
+    </a>
+
+</div>
+
+        <!-- Starter -->
+
+        <div class="card featured">
+
+    <div class="badge">
+        MAIS POPULAR
+    </div>
+
+    <div class="plan-name">
+        Pacote Inicial de Personalização
+    </div>
+
+    <div class="price">
+        €39
+    </div>
+
+    <p class="description">
+        Pequeno pacote de personalização para usuários
+        que necessitam de ajustes específicos.
+    </p>
+
+    <ul class="features">
+        <li>Tudo incluído na Edição Comunitária</li>
+        <li>Solicitações de funcionalidades personalizadas</li>
+        <li>Ajustes de regras de negócio</li>
+        <li>Campos adicionais</li>
+        <li>Melhorias de fluxo de trabalho</li>
+        <li>Até 3 horas de desenvolvimento incluídas</li>
+    </ul>
+
+    <a
+        href="https://www.paypal.me/ValueInvestingSoft"
+        target="_blank"
+        class="btn btn-primary">
+        Comprar Agora
+    </a>
+
+</div>
+
+        <!-- Development -->
+
+       <div class="card">
+
+    <div class="plan-name">
+        Desenvolvimento Personalizado
+    </div>
+
+    <div class="price">
+        €7.99/h
+    </div>
+
+    <p class="description">
+        Para requisitos avançados e desenvolvimento
+        personalizado contínuo.
+    </p>
+
+    <ul class="features">
+        <li>Tudo incluído na Edição Comunitária</li>
+        <li>Personalizações avançadas</li>
+        <li>Tempo de desenvolvimento dedicado</li>
+        <li>Implementação prioritária</li>
+        <li>Fluxos de trabalho personalizados</li>
+        <li>Desenvolvimento de funcionalidades sob demanda</li>
+    </ul>
+
+    <a
+        href="https://www.paypal.me/ValueInvestingSoft"
+        target="_blank"
+        class="btn btn-secondary">
+        Solicitar Desenvolvimento
+    </a>
+
+</div>
+
+    </div>
+
+    <div class="section">
+
+    <h2>Perguntas Frequentes</h2>
+
+    <div class="faq-item">
+        <h3>O software é realmente gratuito?</h3>
+        <p>
+            Sim. Todas as funcionalidades principais estão disponíveis gratuitamente.
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Preciso de uma assinatura?</h3>
+        <p>
+            Não. Não existem taxas mensais recorrentes.
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <h3>O que acontece se minha solicitação exigir mais tempo?</h3>
+        <p>
+            Desenvolvimento adicional pode ser contratado
+            por meio do pacote de desenvolvimento por hora.
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Posso solicitar uma funcionalidade totalmente nova?</h3>
+        <p>
+            Sim. Cada solicitação de desenvolvimento personalizado
+            é avaliada individualmente.
+        </p>
+    </div>
+
+</div>
+
+   <p class="notice">
+    Os serviços de desenvolvimento personalizado são fornecidos
+    de acordo com o escopo do projeto e sua viabilidade técnica.
+</p>
+
+   <div class="footer-actions">
+
+    <a href="index.html" class="back-btn">
+        ← Voltar para a Página Inicial
+    </a>
+
+    <a
+        href="https://www.paypal.me/ValueInvestingSoft"
+        target="_blank"
+        class="paypal-btn">
+        Pagar com PayPal
+    </a>
+
+</div>
+
+</div>
+
+</body>
+</html>
